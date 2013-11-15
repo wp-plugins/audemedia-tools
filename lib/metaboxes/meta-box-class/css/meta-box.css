@@ -1,0 +1,250 @@
+/**
+ * All Types Meta Box Class CSS
+ *
+ * CSS used for the custom metaboxes and other form items.
+ *
+ * Copyright 2011 Ohad Raz (admin@bainternet.info)
+ */
+
+/* =Common Rules for all fields.
+----------------------------------------------- */
+.form-table td.at-field-content {
+    font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue", Helvetica, Arial, sans-serif;
+    width:75%;
+}
+
+.form-table td.at-field-title {width:20%; padding-right:15px;}
+
+.form-table td {border-bottom: 1px solid #e1e1e1; padding:10px 0;}
+
+
+.crop { width: 150px; height: 100px; overflow: hidden; }
+.crop img { width: auto\9;
+  height: auto;
+  max-height:150px;
+  width: auto;
+  max-width:150px;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic; }
+
+.at-label {
+    text-align: left;
+    padding: 5px 0px;
+    display: inline-block;
+    width: 200px;
+    float: left;
+    margin-right: 7px;
+    text-shadow: rgba(255, 255, 255, 1) 0 1px 0;
+}
+
+.at-radio-label {
+    padding-right: 10px;
+}
+
+.at-file-upload-label {
+    clear: both;
+    margin: 5px 0px 5px 1px;
+}	
+
+.at-repeat {
+    clear: both;
+    
+}
+
+.at-repeat td {
+   border-bottom: 0;
+}
+
+.at-repeat .at-repater-block {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d9d9d9;
+    margin-bottom: 1.25em;
+    background: #f2f2f2; 
+    padding: 0 15px 0 0; 
+    max-width:100%;
+    float:left;
+}
+
+.repeater-table td.at-field-title {width:0%;}
+.repeater-table td.at-field-content {width:100%;}
+
+input[disabled] {
+    background: #ddd;
+}
+
+.separator td { padding: 0; }
+
+hr {
+    display: block;
+    width: 100%;
+    border: 0;
+    border-top: 1px solid #dfdfdf;
+    border-bottom: 1px solid #fff;
+    clear: both;
+}
+
+/* =Form Fields
+----------------------------------------------- */
+.postbox .at-field-title, .postbox .at-field-content {
+    vertical-align: top;
+    text-align: left;
+}
+
+.postbox .at-field-content input:not(.button),
+.postbox .at-field-content textarea {
+    width: 100%;
+    padding: 5px;
+    line-height: 18px;
+}
+
+.postbox .at-field-content input[type="radio"], .postbox .at-field-content input[type="checkbox"] {
+    width: auto;
+}
+
+.postbox .at-field-content input.at-color {
+    border: 0px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+    min-width: 100px;
+}
+
+.at-field-content input:focus, 
+.at-field-content textarea:focus {
+    background: #fffff8;
+}
+
+#wpcontent select.at-select {
+    height: 30px !important;
+    padding: 5px;
+    display: block;
+    min-width: 200px;
+}
+
+.at-field-content .desc-field {
+    color: #AAA;
+    font-style: italic;
+    margin: 5px 0 0 3px !important;
+    font-size: 13px;
+    clear: both;
+}
+
+.at-field-content .wp_themeSkin table.mceLayout {
+    border: 1px solid #DFDFDF;
+}
+
+#post-body .at-field-content .wp_themeSkin .mceStatusbar a.mceResize {
+    top: -25px;
+} 
+
+.postbox .at-field-content .amount:not(.button) {
+	float: left;
+    width: 19%;
+}
+
+/* =Uploaded Images
+----------------------------------------------- */
+.at-images li {
+    margin: 5px 10px 0px 0;
+    float: left;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    border: 3px solid #ccc;
+    cursor: move;
+    position: relative;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.at-images img {
+    width: 150px;
+    height: 150px;
+}
+
+.at-images a {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.at-images .at-delete-file img {
+    width: 16px;
+    height: 16px;
+}
+
+/* =Upload Button
+----------------------------------------------- */
+.at-upload-button {
+    float: left;
+    clear: both;
+    margin-top: 10px;
+}
+
+.at-add-file {
+    float: left;
+    clear: both;
+    margin-top: 10px;
+}
+ 
+/* =Time Picker
+----------------------------------------------- */
+.ui-timepicker-div {
+    font-size: 0.9em;
+}
+
+.ui-timepicker-div .ui-widget-header {
+    margin-bottom: 8px;
+}
+
+.ui-timepicker-div dl {
+    text-align: left;
+}
+
+.ui-timepicker-div dl dt {
+    height: 25px;
+}
+
+.ui-timepicker-div dl dd {
+    margin: -25px 0 10px 65px;
+}
+
+.ui-timepicker-div td {
+    font-size: 90%;
+}
+
+/* =Repater Block
+----------------------------------------------- */
+/* inline */
+.at-inline label {
+    font-size: 12px !important;
+}
+
+.at-inline textarea {
+    height: 130px;
+    width: 200px;
+}
+
+/* code Editor */
+.CodeMirror {
+    background-color: #fff;
+}
+
+/* =Slider UI
+----------------------------------------------- */
+.at-slider {
+}
+
+.at-slider .slider-ui {
+    margin-top: 10px;
+    width: 79%;
+    margin-right: 5px;
+    float: left;
+}
