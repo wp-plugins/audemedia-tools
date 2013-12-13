@@ -2,8 +2,8 @@
 
 Contributors: audemedia
 Tags: custom post types, shortcodes, widgets
-Requires at least: 3.4
-Tested up to: 3.7
+Requires at least: 3.5
+Tested up to: 3.8
 Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -18,7 +18,7 @@ Audemedia Tools is a set of plugins that extend Audemedia's WordPress Themes. Co
 
 = Minimum Requirements =
 
-* WordPress 3.4 or greater
+* WordPress 3.5 or greater
 * PHP version 5.2.4 or greater
 * MySQL version 5.0 or greater
 
