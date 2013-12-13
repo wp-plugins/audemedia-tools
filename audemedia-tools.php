@@ -3,7 +3,7 @@
 Plugin Name: Audemedia Tools
 Plugin URI: http://audemedia.com
 Description: Audemedia Tools extends functionality to Audemedia WordPress Themes
-Version: 1.0.1
+Version: 1.0.2
 Author: Audemedia
 Author Email: hello@audemedia.com
 License: GPLv2 or later
@@ -26,6 +26,19 @@ add_action( 'init', array('Services_Post_Type', 'services_init') );
 // SLIDER CUSTOM POST TYPE
 include_once( plugin_dir_path( __FILE__ ) . 'lib/class.audemedia_slider.php');
 add_action( 'init', array('Slider_Post_Type', 'slider_init') );
+
+// TESTIMONIALS CUSTOM POST TYPE
+include_once( plugin_dir_path( __FILE__ ) . 'lib/class.audemedia_testimonials.php');
+add_action( 'init', array('Testimonials_Post_Type', 'testimonials_init') );
+
+// EASY GALLERY
+function check_audemedia_easygallery_support() {
+	if(current_theme_supports('audemedia_easygallery')) {
+		include_once( plugin_dir_path( __FILE__ ) . 'lib/gallery/gallery.php');
+	}
+}
+add_action('init', 'check_audemedia_easygallery_support');
+
 
 // METABOXES FOR SLIDER
 function check_audemedia_slider_cpt_support() {
@@ -52,6 +65,14 @@ function check_audemedia_slider_portfolio_support() {
 	}
 }
 add_action('init', 'check_audemedia_slider_portfolio_support');
+
+// METABOXES FOR TESTIMONIALS
+function check_audemedia_testimonials_cpt_support() {
+	if(current_theme_supports('audemedia_testimonials_cpt')) {
+		include_once( plugin_dir_path( __FILE__ ) . 'lib/metaboxes/testimonials_metaboxes.php');
+	}
+}
+add_action('init', 'check_audemedia_testimonials_cpt_support');
 
 
 // METABOXES FOR POSTS

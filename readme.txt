@@ -4,7 +4,7 @@ Contributors: audemedia
 Tags: custom post types, shortcodes, widgets
 Requires at least: 3.4
 Tested up to: 3.7
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,7 +12,7 @@ Audemedia Tools is a set of plugins that extend Audemedia's WordPress Themes.
 
 == Description ==
 
-Audemedia Tools is a set of plugins that extend Audemedia's WordPress Themes. Contains a set of Custom Post Types like Portfolio, Services and Slider and also shortcodes and widgets.
+Audemedia Tools is a set of plugins that extend Audemedia's WordPress Themes. Contains a set of Custom Post Types like Portfolio, Services, Testimonials and Slider and also shortcodes and widgets.
 
 == Installation ==
 
@@ -51,7 +51,13 @@ The Audemedia Tools was developed to work only with Audemedia WordPress themes.
 = 1.0.1 =
 * The initial release.
 
+= 1.0.2 =
+* Testimonials Custom Post Type has been added.
+
 == Upgrade Notice ==
 
 = 1.0.1 =
 * The initial release.
+
+= 1.0.2 =
+* Testimonials Custom Post Type has been added.

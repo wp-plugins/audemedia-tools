@@ -23,12 +23,11 @@ if (is_admin()){
    */
 
    //text field
-  $aude_slider_meta->addText($prefix.'slider_subtitle',array('name'=> 'Subtitle '));
+$aude_slider_meta->addText($prefix.'slider_subtitle',array('name'=> 'Subtitle '));
   //text field
-  $aude_slider_meta->addText($prefix.'slider_button_text',array('name'=> 'Button Text '));
+$aude_slider_meta->addText($prefix.'slider_button_text',array('name'=> 'Button Text '));
   //text field
-  $aude_slider_meta->addText($prefix.'slider_button_link',array('name'=> 'Link '));
-
+$aude_slider_meta->addText($prefix.'slider_button_link',array('name'=> 'Link '));
  
   $aude_slider_meta->Finish();
 
