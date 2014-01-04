@@ -49,15 +49,6 @@ function check_audemedia_slider_cpt_support() {
 add_action('init', 'check_audemedia_slider_cpt_support');
 
 
-// METABOXES FOR POST/PAGE STYLER
-function check_audemedia_post_customizer_metaboxes_support() {
-	if(current_theme_supports('audemedia_post_customizer_metaboxes')) {
-		include_once( plugin_dir_path( __FILE__ ) . 'lib/metaboxes/post_customizer_metaboxes.php');
-	}
-}
-add_action('init', 'check_audemedia_post_customizer_metaboxes_support');
-
-
 // METABOXES FOR PORTFOLIO
 function check_audemedia_slider_portfolio_support() {
 	if(current_theme_supports('audemedia_portfolio_cpt')) {
@@ -99,4 +90,10 @@ include_once( plugin_dir_path( __FILE__ ) . 'lib/widgets/widget-tweets.php');
 include_once( plugin_dir_path( __FILE__ ) . 'lib/widgets/widget-latest-projects.php');
 include_once( plugin_dir_path( __FILE__ ) . 'lib/widgets/widget-latest-posts.php');
 
+// WIDGETIZED HOME PAGE
+include_once( plugin_dir_path( __FILE__ ) . 'lib/widgets/home-widget-slider.php');
+include_once( plugin_dir_path( __FILE__ ) . 'lib/widgets/home-widget-services.php');
+include_once( plugin_dir_path( __FILE__ ) . 'lib/widgets/home-widget-portfolio.php');
+include_once( plugin_dir_path( __FILE__ ) . 'lib/widgets/home-widget-blog.php');
+include_once( plugin_dir_path( __FILE__ ) . 'lib/widgets/home-widget-testimonials.php');
 ?>

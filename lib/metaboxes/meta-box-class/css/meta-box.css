@@ -13,7 +13,9 @@
 						font: 12px "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue", Helvetica, Arial, sans-serif; 
 						text-shadow: rgba(255, 255, 255, 1) 0 1px 0; width: auto; }
 .at-radio-label{ padding-right: 10px; }				
-.at-file-upload-label{ clear: both; margin: 5px 0px 5px 1px; }	
+.at-file-upload-label{ clear: both; margin: 5px 0px 5px 1px; }
+
+.simplePanelImagePreview img {max-width:350px;}	
 
 
 /* =Form Fields

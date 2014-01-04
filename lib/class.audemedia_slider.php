@@ -31,13 +31,13 @@ function Slider_init() {
 		);
 		
 		$args = array(
-	    	'labels' => $labels,
-	    	'public' => true,
+	    'labels' => $labels,
+	    'public' => true,
 			'supports' => array( 'title', 'thumbnail'),
 			'capability_type' => 'post',
 			'rewrite' => array("slug" => "slider"), // Permalinks format
 			'menu_position' => 15,
-			'has_archive' => true,
+			'has_archive' =>true,
 			'exclude_from_search' => true
 		);
 		
