@@ -3,7 +3,7 @@
 Plugin Name: Audemedia Tools
 Plugin URI: http://audemedia.com
 Description: Audemedia Tools extends functionality to Audemedia WordPress Themes
-Version: 1.0.2
+Version: 1.0.3
 Author: Audemedia
 Author Email: hello@audemedia.com
 License: GPLv2 or later
@@ -30,15 +30,6 @@ add_action( 'init', array('Slider_Post_Type', 'slider_init') );
 // TESTIMONIALS CUSTOM POST TYPE
 include_once( plugin_dir_path( __FILE__ ) . 'lib/class.audemedia_testimonials.php');
 add_action( 'init', array('Testimonials_Post_Type', 'testimonials_init') );
-
-// EASY GALLERY
-function check_audemedia_easygallery_support() {
-	if(current_theme_supports('audemedia_easygallery')) {
-		include_once( plugin_dir_path( __FILE__ ) . 'lib/gallery/gallery.php');
-	}
-}
-add_action('init', 'check_audemedia_easygallery_support');
-
 
 // METABOXES FOR SLIDER
 function check_audemedia_slider_cpt_support() {
@@ -74,26 +65,21 @@ function check_audemedia_post_metaboxes_support() {
 }
 add_action('init', 'check_audemedia_post_metaboxes_support');
 
-// METABOXES FOR POST FORMATS
-function check_audemedia_postformats_fields_support() {
-	if(current_theme_supports('audemedia_postformats_fields')) {
-		include_once( plugin_dir_path( __FILE__ ) . 'lib/metaboxes/post_postformats_fields.php');
+// SHORTCODES
+if(current_theme_supports('audemedia_shortcodes')) {
+include_once( plugin_dir_path( __FILE__ ) . 'lib/shortcodes.php');
+}
+
+// AUTHOR SOCIAL ICONS
+function check_audemedia_author_social() {
+	if(current_theme_supports('audemedia_author_social')) {
+		include_once( plugin_dir_path( __FILE__ ) . 'lib/authorboxsocial.php');
 	}
 }
-add_action('init', 'check_audemedia_postformats_fields_support');
+add_action('init', 'check_audemedia_author_social');
 
-// SHORTCODES
-include_once( plugin_dir_path( __FILE__ ) . 'lib/shortcodes.php');
 
 // WIDGETS
 include_once( plugin_dir_path( __FILE__ ) . 'lib/widgets/widget-tweets.php');
-include_once( plugin_dir_path( __FILE__ ) . 'lib/widgets/widget-latest-projects.php');
 include_once( plugin_dir_path( __FILE__ ) . 'lib/widgets/widget-latest-posts.php');
-
-// WIDGETIZED HOME PAGE
-include_once( plugin_dir_path( __FILE__ ) . 'lib/widgets/home-widget-slider.php');
-include_once( plugin_dir_path( __FILE__ ) . 'lib/widgets/home-widget-services.php');
-include_once( plugin_dir_path( __FILE__ ) . 'lib/widgets/home-widget-portfolio.php');
-include_once( plugin_dir_path( __FILE__ ) . 'lib/widgets/home-widget-blog.php');
-include_once( plugin_dir_path( __FILE__ ) . 'lib/widgets/home-widget-testimonials.php');
 ?>
