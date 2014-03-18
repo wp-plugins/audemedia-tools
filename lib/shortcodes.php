@@ -52,19 +52,6 @@ function audemedia_shortcode_button( $atts, $content = null ) {
 
 add_shortcode( 'button', 'audemedia_shortcode_button' );
 
-// Alerts [alert][/alert]
-
-function audemedia_shortcode_alert( $atts, $content = null ) {
-
-	extract( shortcode_atts( array(
-		'type' => ''
-		), $atts ) );
-
-	return '<div data-alert class="alert-box ' . esc_attr($type) . '">' . do_shortcode($content) . ' <a href="#" class="close">&times;</a> </div>';
-}
-
-add_shortcode( 'alert', 'audemedia_shortcode_alert' );
-
 // Panels [panel][/panel]
 
 function audemedia_shortcode_panel( $atts, $content = null ) {

@@ -13,7 +13,7 @@ class Testimonials_Post_Type {
 
 	}
 	
-function Testimonials_init() {
+public static function Testimonials_init() {
 
 
 

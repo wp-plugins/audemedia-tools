@@ -13,7 +13,7 @@ class Slider_Post_Type {
 
 	}
 	
-function Slider_init() {
+public static function Slider_init() {
 
 
 

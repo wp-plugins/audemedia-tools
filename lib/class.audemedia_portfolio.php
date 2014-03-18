@@ -23,7 +23,7 @@ class Portfolio_Post_Type {
 		}
 
 	
-function portfolio_init() {
+public static function portfolio_init() {
 
 	$labels = array(
 			'name' => __( 'Portfolio', 'portfolioposttype' ),

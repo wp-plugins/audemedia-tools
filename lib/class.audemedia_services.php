@@ -13,7 +13,7 @@ class Services_Post_Type {
 
 	}
 	
-function services_init() {
+public static function services_init() {
 
 
 

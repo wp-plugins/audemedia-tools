@@ -2,9 +2,9 @@
 
 Contributors: audemedia
 Tags: custom post types, shortcodes, widgets
-Requires at least: 3.6
+Requires at least: 3.8
 Tested up to: 3.8
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -18,7 +18,7 @@ Audemedia Tools is a set of plugins that extend Audemedia's WordPress Themes. Co
 
 = Minimum Requirements =
 
-* WordPress 3.4 or greater
+* WordPress 3.8 or greater
 * PHP version 5.2.4 or greater
 * MySQL version 5.0 or greater
 
@@ -64,3 +64,6 @@ The Audemedia Tools was developed to work only with Audemedia WordPress themes.
 
 = 1.0.3 =
 * Author Social Fields has been added.
+
+= 1.0.4 =
+* Custom fields/metaboxes has been added to Portfolio Post Type.
