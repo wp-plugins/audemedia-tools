@@ -4,7 +4,7 @@ Contributors: audemedia
 Tags: custom post types, shortcodes, widgets
 Requires at least: 3.8
 Tested up to: 3.8
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -67,3 +67,6 @@ The Audemedia Tools was developed to work only with Audemedia WordPress themes.
 
 = 1.0.4 =
 * Custom fields/metaboxes has been added to Portfolio Post Type.
+
+= 1.0.5 =
+* Team Custom Post Type has been added.

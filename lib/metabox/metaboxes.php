@@ -16,6 +16,14 @@ function check_audemedia_services_metaboxes_support() {
 }
 add_action('init', 'check_audemedia_services_metaboxes_support');
 
+// METABOXES FOR TEAM
+function check_audemedia_team_metaboxes_support() {
+	if(current_theme_supports('audemedia_team_cpt')) {
+		include_once( 'team_post_type.php');
+	}
+}
+add_action('init', 'check_audemedia_team_metaboxes_support');
+
 
 // METABOXES FOR POSTS
 function check_audemedia_post_metaboxes_support() {

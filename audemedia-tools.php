@@ -3,7 +3,7 @@
 Plugin Name: Audemedia Tools
 Plugin URI: http://audemedia.com
 Description: Audemedia Tools extends functionality to Audemedia WordPress Themes
-Version: 1.0.4
+Version: 1.0.5
 Author: Audemedia
 Author Email: hello@audemedia.com
 License: GPLv2 or later
@@ -22,6 +22,10 @@ add_action( 'init', array('Portfolio_Post_Type', 'portfolio_init') );
 // SERVICES CUSTOM POST TYPE
 include_once( plugin_dir_path( __FILE__ ) . 'lib/class.audemedia_services.php');
 add_action( 'init', array('Services_Post_Type', 'services_init') );
+
+// TEAM CUSTOM POST TYPE
+include_once( plugin_dir_path( __FILE__ ) . 'lib/class.audemedia_team.php');
+add_action( 'init', array('Team_Post_Type', 'team_init') );
 
 // SLIDER CUSTOM POST TYPE
 include_once( plugin_dir_path( __FILE__ ) . 'lib/class.audemedia_slider.php');

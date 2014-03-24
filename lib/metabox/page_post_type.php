@@ -10,6 +10,14 @@ function aude_page_metaboxes( $page_meta_boxes ) {
         'priority' => 'high',
         'show_names' => true, // Show field names on the left
         'fields' => array(
+		    
+			array(
+				'name'    => __( 'Page Headline', 'cmb' ),
+				'desc'    => __( '', 'cmb' ),
+				'id'      => $prefix . 'page_headline',
+				'sanitization_cb' => false,
+				'type'    => 'textarea_small',
+			),
           
             array(
 				'name'    => __( 'Page Subtitle', 'cmb' ),
