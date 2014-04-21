@@ -140,19 +140,19 @@ echo '</ul>'; ?>
 
 		<!-- Widget Title: Text Input -->
 		<p>
-			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e('Title:', 'aude_theme') ?></label>
+			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e('Title', 'aude_theme') ?></label>
 			<input type="text" class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" value="<?php echo $instance['title']; ?>" />
 		</p>
 
 		<!-- Consumer Key: Text Input -->
 		<p>
-			<label for="<?php echo $this->get_field_id( 'consumer_key' ); ?>"><?php _e('Consumer Key', 'aude_theme') ?></label>
+			<label for="<?php echo $this->get_field_id( 'consumer_key' ); ?>"><?php _e('API Key', 'aude_theme') ?></label>
 			<input type="text" class="widefat" id="<?php echo $this->get_field_id( 'consumer_key' ); ?>" name="<?php echo $this->get_field_name( 'consumer_key' ); ?>" value="<?php echo $instance['consumer_key']; ?>" />
 		</p>
 
 		<!-- Consumer Secret: Text Input -->
 		<p>
-			<label for="<?php echo $this->get_field_id( 'consumer_secret' ); ?>"><?php _e('Consumer Secret', 'aude_theme') ?></label>
+			<label for="<?php echo $this->get_field_id( 'consumer_secret' ); ?>"><?php _e('API Secret', 'aude_theme') ?></label>
 			<input type="text" class="widefat" id="<?php echo $this->get_field_id( 'consumer_secret' ); ?>" name="<?php echo $this->get_field_name( 'consumer_secret' ); ?>" value="<?php echo $instance['consumer_secret']; ?>" />
 		</p>
 
