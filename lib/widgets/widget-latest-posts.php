@@ -20,7 +20,7 @@ class aude_latestpost_widget extends WP_Widget {
 		$widget_tws = array( 'classname' => 'aude_latestpost_widget', 'description' => __('A widget for add recent posts with image thumbnails', 'aude_theme') );
 
 		/* Widget control settings. */
-		$control_tws = array( 'width' => 300, 'height' => 350, 'id_base' => 'aude_latestpost_widget' );
+		$control_tws = array( 'width' => 200, 'height' => 250, 'id_base' => 'aude_latestpost_widget' );
 
 		/* Create the widget. */
 		$this->WP_Widget( 'aude_latestpost_widget', __('Audemedia ++ Latest Posts','aude_theme'), $widget_tws, $control_tws );

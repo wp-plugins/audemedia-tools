@@ -30,7 +30,7 @@ class aude_tweet_widget extends WP_Widget {
 		$widget_tws = array( 'classname' => 'aude_tweet_widget', 'description' => __('A widget for showing latest tweets', 'aude_theme') );
 
 		/* Widget control settings. */
-		$control_tws = array( 'width' => 300, 'height' => 350, 'id_base' => 'aude_tweet_widget' );
+		$control_tws = array( 'width' => 200, 'height' => 250, 'id_base' => 'aude_tweet_widget' );
 
 		/* Create the widget. */
 		$this->WP_Widget( 'aude_tweet_widget', __('Audemedia ++ Latest Tweets','aude_theme'), $widget_tws, $control_tws );
