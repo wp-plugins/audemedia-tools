@@ -6,18 +6,9 @@ add_action( 'widgets_init', 'aude_tweets_widget' );
 // Register widget
 function aude_tweets_widget() {
 	register_widget( 'aude_tweet_widget' );
-}
+} 
 
 include_once( plugin_dir_path( __FILE__ ) . 'twitter/twitter_api.php');
-
-function aude_add_tweets_scripts() {
-		if (!is_admin()) {      
-		wp_register_script( 'aude_tweets', plugins_url('/twitter/jquery.tweet.js', __FILE__), array('jquery'), '', true );
-		wp_enqueue_script('aude_tweets');
-	    }
-		}
-        add_action('wp_footer', 'aude_add_tweets_scripts');
-
 
 // Widget class
 class aude_tweet_widget extends WP_Widget {

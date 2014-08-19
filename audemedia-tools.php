@@ -3,7 +3,7 @@
 Plugin Name: Audemedia Tools
 Plugin URI: http://audemedia.com
 Description: Audemedia Tools extends functionality to Audemedia WordPress Themes
-Version: 1.0.7
+Version: 1.0.8
 Author: Audemedia
 Author Email: hello@audemedia.com
 License: GPLv2 or later

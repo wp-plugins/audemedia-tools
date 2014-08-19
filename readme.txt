@@ -4,7 +4,7 @@ Contributors: audemedia
 Tags: custom post types, shortcodes, widgets
 Requires at least: 3.8
 Tested up to: 3.9
-Stable tag: 1.0.7
+Stable tag: 1.0.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -76,3 +76,6 @@ The Audemedia Tools was developed to work only with Audemedia WordPress themes.
 
 = 1.0.7 =
 * Fix for widgets appearance in Theme Customizer.
+
+= 1.0.8 =
+* Fix Twitter widget.
