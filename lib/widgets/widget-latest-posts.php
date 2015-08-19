@@ -23,7 +23,7 @@ class aude_latestpost_widget extends WP_Widget {
 		$control_tws = array( 'width' => 200, 'height' => 250, 'id_base' => 'aude_latestpost_widget' );
 
 		/* Create the widget. */
-		$this->WP_Widget( 'aude_latestpost_widget', __('Audemedia ++ Latest Posts','aude_theme'), $widget_tws, $control_tws );
+		parent::__construct( 'aude_latestpost_widget', __('Audemedia ++ Latest Posts','aude_theme'), $widget_tws, $control_tws );
 	}
 
 /* ---------------------------------------------------------------------*/

@@ -24,7 +24,7 @@ class aude_tweet_widget extends WP_Widget {
 		$control_tws = array( 'width' => 200, 'height' => 250, 'id_base' => 'aude_tweet_widget' );
 
 		/* Create the widget. */
-		$this->WP_Widget( 'aude_tweet_widget', __('Audemedia ++ Latest Tweets','aude_theme'), $widget_tws, $control_tws );
+		parent::__construct( 'aude_tweet_widget', __('Audemedia ++ Latest Tweets','aude_theme'), $widget_tws, $control_tws );
 	}
 
 /* ---------------------------------------------------------------------*/
